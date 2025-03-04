@@ -314,7 +314,7 @@ let numberIndex = 0;
 $(window).on("load", function () {
   if ($(".js-nav-tab")) {
     handleTabChange($(".js-nav-tab li.active"));
-    if ($("#repcarepage")) {
+    if (document.getElementById("repcarepage")) {
       handleTabChangeHowto($(".js-nav-tab li.active"), 0);
     }
   }
@@ -329,7 +329,7 @@ $(document).on("click", ".js-nav-tab li", function () {
     // tab
     $(this).addClass("active");
     handleTabChange($(this));
-    if ($("#repcarepage")) {
+    if (document.getElementById("repcarepage")) {
       handleTabChangeHowto($(this), numberIndex);
     }
     // content
